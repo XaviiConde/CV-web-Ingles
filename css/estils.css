@@ -11,34 +11,64 @@ body{
 }
 .row{
     display: flex;
-    
+    flex-wrap: wrap;
+    flex-direction: row;    
+}
+.columna-50{
+  width: 47%;
+  padding-left: 50px;
+  text-align: center;
+}
+#opcion1{
+    text-align: left;
+}
+#opcion2{
+    text-align: right;
+}
+#opcion3{
+    text-align: right;
+}
+#opcion4{
+  text-align: right;
+}
+.yo{
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
 }
 .column-2{
     width: 100%;
-    background-color: rgb(16,84,68);
-    color: white;
-    padding-left: 25px;
+    background-color: black;
+}
+.column-2{
+  width: 100%;
+}
+.column-3{
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
 }
 .column-4{
     width: 65%;
 }
-.column-5 a{
-    background-color: yellow;
-    display: flex;
-    width: 35%;
+.info{
+  text-align: center;
 }
-.column-6{
-    width: 30%;
-    float: left;
-    text-align: center;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  border-radius: 0;
+  border: 1px solid black;
+  background-color: black;
+  padding: 15px ;
 }
-.column-3{  
-    width: 100%;
-    text-align: center;
-    padding: 100px;
+nav li {
+  display: inline-block;
 }
-.mundi{
-    text-align: left;
+nav li.derecha {
+  float: right;
 }
 div > .oculto {
     display: none;
@@ -49,50 +79,6 @@ div > .oculto {
 a {
     padding: 10px;
     text-decoration: none;
-    color: black;
-}
-a:hover{
-    border-radius: 0;
-    border: 0px solid orange;
-    background-color: orange;
-}
-hr {
-    height: 4px;
-    background-color: orange;
+    color: white;
 }
 
-@media (max-width: 767px) {
-    body {
-      padding: 0 20px;
-    }
-    .row {
-      flex-direction: column;
-    }
-    #opcion1, #opcion2, #opcion3 {
-      padding: 0;
-    }
-    .column-2 {
-      width: 100%;
-      padding: 25px;
-    }
-    .column-4 {
-      width: 100%;
-    }
-    .column-5 a {
-      width: 100%;
-    }
-    .column-6 {
-      width: 100%;
-      float: none;
-    }
-    .descripcion-read {
-      padding-left: 0;
-    }
-    .column-6 img {
-      width: 100%;
-      padding: 0;
-      margin: 0 auto;
-      display: block;
-    }
-  }
-  
