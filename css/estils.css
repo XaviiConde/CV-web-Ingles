@@ -81,3 +81,26 @@ a {
     text-decoration: none;
     color: white;
 }
+@media (max-width: 768px) {
+  .columna-50 {
+    width: 100%;
+    padding-left: 0;
+  }
+  #opcion1,
+  #opcion2,
+  #opcion3,
+  #opcion4 {
+    text-align: center;
+  }
+  .column-2,
+  .column-3,
+  .column-4 {
+    width: 100%;
+  }
+  nav ul {
+    text-align: center;
+  }
+  nav li.derecha {
+    float: none;
+  }
+}
